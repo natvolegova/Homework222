@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Homework222</string>
+    <string name="menu_item_1">Настройки</string>
+    <string name="menu_item_2">Записная книжка</string>
+    <string name="menu_item_3">Подписка на рассылку</string>
+    <string name="menu_item_4">Просмотр фото</string>
+    <string name="menu_item_5">Оплата услуг</string>
+    <string name="menu_item_6">Страны-города-улицы</string>
+    <string name="menu_item_7">Сроки задачи</string>
+    <string name="label_main">Учет задач</string>
+    <string name="label_splash">Задачи, настройки</string>
+    <string name="txt_subscr_name">Имя</string>
+    <string name="txt_subscr_email">E-mail</string>
+    <string name="button_subscrib">Подписаться</string>
+    <string name="button_reset">Очистить</string>
+    <string name="txt_subscr_heading">Подпишитесь на рассылку и получайте новые акции и предложения каждый день</string>
+    <string name="txt_subscr_result">Подписка на рассылку успешно оформлена для пользователя %s на электронный адрес %s</string>
+    <string name="txt_subscr_noresult">Подписка на рассылку не оформлена</string>
+    <string name="txt_gallery_result">Просмотр галереи завершен</string>
+    <string name="txt_gallery_noresult">Посмотрите галерею фотографий</string>
+    <string name="btn_gallery_back">Назад</string>
+    <string name="btn_gallery_next">Вперед</string>
+    <string name="hint_pay_input">Ввод денег</string>
+    <string name="hint_pay_info">Информация об оплате</string>
+    <string name="chk_pay_card">С банковской карты</string>
+    <string name="chk_pay_phone">С мобильного телефона</string>
+    <string name="chk_pay_adress">Наличными по адресу</string>
+    <string name="button_add">Добавить</string>
+    <string name="txt_pay_result">Платеж на сумму %s руб. успешно выполнен. Информация об оплате %s</string>
+    <string name="txt_pay_noresult">Оплатите услуги</string>
+    <string name="txt_city_result">Выбран адрес %s, %s, %s</string>
+    <string name="txt_city_noresult">Выберите адрес в разделе Страны-города-улицы</string>
+    <string name="button_show_adress">Показать адрес</string>
+    <string-array name="countries">
+        <item>Россия</item>
+        <item>Украина</item>
+        <item>Белоруссия</item>
+    </string-array>
+    <string-array name="r_cities">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Казань</item>
+    </string-array>
+    <string-array name="u_cities">
+        <item>Киев</item>
+        <item>Одесса</item>
+        <item>Харьков</item>
+    </string-array>
+    <string-array name="b_cities">
+        <item>Минск</item>
+        <item>Гомель</item>
+        <item>Торжок</item>
+    </string-array>
+    <string name="btn_start">Начало</string>
+    <string name="btn_end">Конец</string>
+    <string name="msg_error_task">Неверно выбран формат даты</string>
+    <string name="txt_task_result">Задача успешно запланирована на период %s - %s</string>
+    <string name="txt_task_noresult">Добавьте задачу через календарь</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="txt_settings_result">Учетные данные успешно сохранены</string>
+    <string name="txt_settings_noresult">Заполните информацию о себе в настройках</string>
+    <string name="txt_hello">Привет, %s</string>
+</resources>

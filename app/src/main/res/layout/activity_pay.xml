@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/my_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/layout_cont"
+        android:divider="@drawable/spacer_medium"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+        <EditText
+            android:id="@+id/inputMoney"
+            android:hint="@string/hint_pay_input"
+            style="@style/input"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/inputInfo"
+            style="@style/input"
+            android:hint="@string/hint_pay_info" />
+        <CheckBox
+            android:id="@+id/bankCardChkBx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chk_pay_card"/>
+        <CheckBox
+            android:id="@+id/mobilePhoneChkBx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chk_pay_phone"/>
+        <CheckBox
+            android:id="@+id/cashAddressChkBx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chk_pay_adress"/>
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/button"
+            android:text="@string/button_add" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
