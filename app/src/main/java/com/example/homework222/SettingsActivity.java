@@ -21,13 +21,13 @@ public class SettingsActivity extends AppCompatActivity {
     private EditText setting_email;
     private Button btn_ok;
     private Button btn_reset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         //инициируем все поля
         initView();
-
         //обрабатываем нажатия кнопок
         btn_ok.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +48,6 @@ public class SettingsActivity extends AppCompatActivity {
                 initPref("","");
             }
         });
-
         //подключаем Toolbar
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -61,8 +60,8 @@ public class SettingsActivity extends AppCompatActivity {
     }
     private void initView(){
         toolbar = findViewById(R.id.my_toolbar);
-        setting_name = findViewById(R.id.subscribe_name);
-        setting_email = findViewById(R.id.subscribe_email);
+        setting_name = findViewById(R.id.setting_name);
+        setting_email = findViewById(R.id.setting_email);
         btn_ok = findViewById(R.id.btn_ok);
         btn_reset = findViewById(R.id.btn_reset);
 
@@ -70,8 +69,12 @@ public class SettingsActivity extends AppCompatActivity {
         mySharedPref = getSharedPreferences("settings", MODE_PRIVATE);
         String name = mySharedPref.getString(SETTING_NAME, "");
         String email = mySharedPref.getString(SETTING_EMAIL, "");
-        setting_name.setText(name);
-        setting_email.setText(email);
+        if(!name.equals("")){
+            setting_name.setText(name);
+        }
+        if(!email.equals("")){
+            setting_email.setText(email);
+        }
     }
     //создадим переменную, куда будем заносить значения выполненных задач
     public void initPref(String name, String email){
@@ -81,4 +84,5 @@ public class SettingsActivity extends AppCompatActivity {
         editor.putString(SETTING_EMAIL, email);
         editor.apply();
     }
+
 }

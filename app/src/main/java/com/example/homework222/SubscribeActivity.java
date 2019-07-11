@@ -76,8 +76,12 @@ public class SubscribeActivity extends AppCompatActivity {
         mySharedPref = getSharedPreferences("settings", MODE_PRIVATE);
         String name = mySharedPref.getString(SUBSCRIBE_NAME, "");
         String email = mySharedPref.getString(SUBSCRIBE_EMAIL, "");
-        subscribe_name.setText(name);
-        subscribe_email.setText(email);
+        if(!name.equals("")){
+            subscribe_name.setText(name);
+        }
+        if(!email.equals("")){
+            subscribe_email.setText(email);
+        }
     }
     //создадим переменную, куда будем заносить значения выполненных задач
     public void initPref(String result, String name, String email){
